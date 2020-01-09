@@ -17,6 +17,9 @@ import java.util.Set;
 @AllArgsConstructor
 @Builder
 @Entity
+
+// many to many with users
+
 public class Event {
 
     @Id

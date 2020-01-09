@@ -1,4 +1,4 @@
-//used to load default data....same as typical Seed Data I usually use. 
+//used to load default data....same as typical Seed Data I usually use.
 
 package com.okta.developer.jugtours;
 

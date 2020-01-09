@@ -1,5 +1,8 @@
 package com.okta.developer.jugtours.model;
 
+// many to one with users
+// one to many with event
+
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
