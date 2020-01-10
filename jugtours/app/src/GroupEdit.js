@@ -38,7 +38,7 @@ class GroupEdit extends Component {
         item[name] = value;
         this.setState({item});
     }
-// Had to find fix to "Put not supported" in comments of tutorial 
+// Had to find fix to "Put not supported" in comments of tutorial fix as adding +(item.id)
     async handleSubmit(event) {
         event.preventDefault();
         const {item} = this.state;
