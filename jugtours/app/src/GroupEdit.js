@@ -38,12 +38,12 @@ class GroupEdit extends Component {
         item[name] = value;
         this.setState({item});
     }
-
+// Had to find fix to "Put not supported" in comments of tutorial 
     async handleSubmit(event) {
         event.preventDefault();
         const {item} = this.state;
 
-        await fetch('/api/group', {
+        await fetch('/api/group/'+(item.id), {
             method: (item.id) ? 'PUT' : 'POST',
             headers: {
                 'Accept': 'application/json',
