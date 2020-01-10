@@ -4,11 +4,14 @@ import Home from './Home';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import GroupList from './GroupList';
 import GroupEdit from './GroupEdit';
+import { CookiesProvider } from 'react-cookie'; // allows you to read the csrf cookie and send it back as a header
+
 
 
 class App extends Component {
     render() {
         return (
+            <CookiesProvider>
             <Router>
                 <Switch>
 
@@ -18,6 +21,7 @@ class App extends Component {
 
                 </Switch>
             </Router>
+            </CookiesProvider>
         )
     }
 }
